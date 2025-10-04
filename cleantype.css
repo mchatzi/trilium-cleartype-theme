@@ -25,6 +25,13 @@ body {
 
     --main-font-size: 0.8rem !important;
     --gutter-color: #fefefe;
+
+    --active-tab-background-color: #9fffd3;
+    --active-tab-hover-background-color: #9fffd3;
+}
+
+.tab-row-widget {
+    border-bottom: 1px solid #fefefe;
 }
 
 .ck.ck-editor__editable.ck-blurred .ck-widget.ck-widget_selected,
