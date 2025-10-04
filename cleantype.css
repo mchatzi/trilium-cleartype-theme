@@ -24,6 +24,7 @@ body {
     --main-font-family: 'Roboto Mono', monospace;
 
     --main-font-size: 0.8rem !important;
+    --gutter-color: #fefefe;
 }
 
 .ck.ck-editor__editable.ck-blurred .ck-widget.ck-widget_selected,
@@ -45,12 +46,12 @@ ul.fancytree-container li {
     margin-bottom: -20px;
 }
 
+/*THIS MAKES THE GRID VIEW DISSAPEAR :( :(
 .note-detail {
-    /*THIS HERE MAKES THE GRID DISSAPEAR 
     padding-left: 0px;
     padding-right: 10px;
-    margin-bottom: -20px;*/
-}
+    margin-bottom: -20px;
+}*/
 
 .tree-item-button {
     font-size: 100%;
@@ -182,9 +183,6 @@ span.bx.bx-trash.pointer {
     text-shadow: 0px 0px 0px var(--muted-text-color);
     color: white;
 }
-
-
-
 
 
 .section-container.component {
@@ -392,7 +390,6 @@ h1 {
 
 a {
     color: #007bff;
-
     text-decoration: none;
     font-style: italic;
     background-color: transparent;
@@ -443,6 +440,15 @@ a {
 
 
 .note-book-card h5 {}
+
+.note-list-wrapper .note-book-card .note-book-header span.note-book-title {
+    font-size: 1.2em;
+}
+
+.note-list-wrapper .note-book-card .note-book-content .ck-content {
+    padding: 0 !important;
+    font-size: 0.8rem;
+}
 
 .grid-view h5 {
     color: #000000;
@@ -578,7 +584,7 @@ button.icon-button {
 
 .note-list.grid-view .note-book-card:hover {
     flex-basis: 200px;
-    max-height: 280px;
+    max-height: 300px;
     max-width: 205px;
     /* border: 1px solid #9e9d9d40; */
     background-color: #ffffff !important;
