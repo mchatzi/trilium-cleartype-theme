@@ -2,47 +2,147 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
 
-body.theme-cleantype {  
+
+
+
+
+
+body {
+--tree-font-family: 'Roboto Mono', monospace;
+    --main-background-color: #f0f0f0;
+    --detail-font-family: 'Roboto Mono', monospace;
+    --more-accented-background-color:#ffffff50;
+    
     --main-font-family: 'Roboto Mono', monospace;
     --header-background-color: #f0f0f0;
     --button-background-color:#f0f0f0;
     --button-disabled-background-color: #404552;
     --button-text-color: #737373;
-    --input-background-color: #f0f0f0;
+    
     --main-text-color: #333333;
     --main-background-color: #f0f0f0;
     --menu-background-color: #eee;
-    --more-accented-background-color:#ffffff50;
+    
     --link-color:#2f80d0;
     --link-style:italic;
     --main-border-color:#e2e2e2;
-    --main-font-size: 0.8rem!important;
- 
-  
-   }
+    --main-font-family: 'Roboto Mono', monospace;
+
+    --main-font-size: 0.8rem!important;    
+}
 
 
-.theme-cleantype .ck.ck-editor__editable.ck-blurred .ck-widget.ck-widget_selected, .ck.ck-editor__editable.ck-blurred .ck-widget.ck-widget_selected:hover {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.ck.ck-editor__editable.ck-blurred .ck-widget.ck-widget_selected, .ck.ck-editor__editable.ck-blurred .ck-widget.ck-widget_selected:hover {
     outline-color: #2e2e2e1a;
     outline-width: 1px;
 }
 
-.theme-cleantype .note-list.list-view .image {float:left;}
+.note-list.list-view .image {float:left;}
 
-.theme-cleantype ul.fancytree-container li {
+
+ul.fancytree-container li {
        margin-bottom: -0px;
 }
 
-.theme-cleantype .note-list-container{
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.note-list-container{
      margin-bottom: -20px;     
 }
 
-.theme-cleantype .note-detail{  
-    padding-left: 0px;
-      padding-right:10px;
-    margin-bottom: -20px;}
 
-.theme-cleantype .tree-item-button {
+
+
+
+
+
+
+
+
+
+
+
+
+.note-detail{  
+    /*THIS HERE MAKES THE GRID DISSAPEAR 
+    padding-left: 0px;
+    padding-right: 10px;
+    margin-bottom: -20px;*/
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.tree-item-button {
     font-size: 100%; 
     cursor: pointer;
     border-radius: 3px;
@@ -52,18 +152,96 @@ body.theme-cleantype {
     opacity: 0.6;
 }
 
-.theme-cleantype .gutter {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.gutter {
    background: linear-gradient(to bottom, var(--more-accented-background-color), var(--more-accented-background-color), var(--more-accented-background-color))!important;
 
 }
-.theme-cleantype .gutter.gutter-horizontal{
+.gutter.gutter-horizontal{
         width:4px!important;
 }
 
-.theme-cleantype .note-icon-container button.note-icon {
+.note-icon-container button.note-icon {
     font-size: 150%;}
 
-.theme-cleantype .todo-list {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.todo-list {
    
     white-space: nowrap;
     overflow: hidden;
@@ -71,8 +249,11 @@ body.theme-cleantype {
     
 }
 
-.theme-cleantype .note-list-container .ck-content {
+
+.note-list-container .ck-content {
 }
+
+
 button.btn.btn-sm.search-button {
     background-color: #919191;
     color: white;
@@ -88,19 +269,123 @@ button.btn.btn-sm.search-button {
     border-radius: .2rem;
 }
 
-.theme-cleantype button.btn, button.btn-sm {
+button.btn, button.btn-sm {
     font-size: 0.8em;
 }
 
-.theme-cleantype .section-body {border:0px!important;}
+.section-body {border:0px!important;}
 
-.theme-cleantype .note-list-wrapper {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+.note-list-wrapper {
     height: 110%;
     overflow: hidden;
     padding-bottom: 20px;
 }
 
-.theme-cleantype .note-list-pager {
+.note-list-pager {
 height: 0px!important;
     text-align: center;
     font-size: 0.85em;
@@ -108,40 +393,42 @@ height: 0px!important;
     font-weight: 800;
 }
 
-.theme-cleantype .note-detail-editable-text {
+.note-detail-editable-text {
     font-family: var(--detail-text-font-family);
     padding-left: 12px;
     padding-top: 0px;
 }
 
-.theme-cleantype span.bx.bx-trash.pointer {
+span.bx.bx-trash.pointer {
     margin-right: 20px;
     margin-left: -10px;
 }
 
-.theme-cleantype .input-group {
+.input-group {
     position: relative;
     padding-top: 5px;
     padding-bottom: 5px;}
 
 
-.theme-cleantype .add-new-attribute-button {
+.add-new-attribute-button {
     margin-right: 50px;
 }
 
-.theme-cleantype .component .title-row{    margin-top: 0px;
-    margin-bottom: -15px;}
+.component .title-row{    
+margin-top: 0px;
+    margin-bottom: -5px;
+    }
 
-.theme-cleantype .note-icon-container {
+.note-icon-container {
     margin-right: -8px;
 }
 
 
-.theme-cleantype .note-book-title .note-icon {  padding-left: 0px;
+.note-book-title .note-icon {  padding-left: 0px;
     
 }
 
-.theme-cleantype .note-book-title .note-icon {
+.note-book-title .note-icon {
     font-size:100%;
     padding-left: 0px;
     padding-right: 4px;
@@ -149,11 +436,15 @@ height: 0px!important;
 top:1px;
     opacity:0.2;}
 
-.theme-cleantype .note-title-container input.note-title.protected {
+.note-title-container input.note-title.protected {
     text-shadow: 0px 0px 0px var(--muted-text-color);color:white;
 }
 
-.theme-cleantype .section-container.component {
+
+
+
+
+.section-container.component {
     
    /*position:absolute;*/
    
@@ -161,8 +452,11 @@ top:1px;
     z-index: 1;
   /* width: inherit;*/
     }
+    
 
 .component .hide-in-zen-mode {z-index:2}
+
+
 
 .attr-detail.component {
     position: revert;
@@ -173,9 +467,10 @@ top:1px;
     z-index: 999;}
 
 
-.theme-cleantype .note-title-container  input, 
-.theme-cleantype .note-title-container  select, 
-.theme-cleantype .note-title-container textarea {
+
+.note-title-container  input, 
+.note-title-container  select, 
+.note-title-container textarea {
     background-color:transparent!important;
     border: 1px solid #cecece;
     border-radius: 6px;
@@ -184,13 +479,13 @@ top:1px;
 
 
 
-.theme-cleantype span.fancytree-title {
+span.fancytree-title {
     color: #656565!important;}
 
-.theme-cleantype .ck-content .image.image_resized img {
+.ck-content .image.image_resized img {
     width: 100%!important;}
 
-.theme-cleantype span.fancytree-active .fancytree-title, span.fancytree-active.fancytree-selected .fancytree-title {
+span.fancytree-active .fancytree-title, span.fancytree-active.fancytree-selected .fancytree-title {
     padding-left:5px;padding-right:5px;
     FONT-WEIGHT: 600;
     color: var(--active-item-text-color) !important;
@@ -198,25 +493,25 @@ top:1px;
     border-radius: 4px;
 }
 
-.theme-cleantype span.fancytree-custom-icon {
+span.fancytree-custom-icon {
   
     opacity: 0.5;
 }
 
-.theme-cleantype .fancytree-node:not(.fancytree-loading) .fancytree-expander {
+.fancytree-node:not(.fancytree-loading) .fancytree-expander {
   
     opacity: 0.5;
 }
 
-.theme-cleantype .note-book-content.type-text {
+.note-book-content.type-text {
     font-size: 90%;
 
 }
 
-.theme-cleantype .note-list-widget-content {padding-top:5px}
-.theme-cleantype .note-detail-editable-text-editor{}
+.note-list-widget-content {padding-top:5px}
+.note-detail-editable-text-editor{}
 
-.theme-cleantype .collapse-tree-button {
+.collapse-tree-button {
         position: absolute;
         top: 10px;
         right: 40px;
@@ -224,71 +519,71 @@ top:1px;
     }
 
 
-.theme-cleantype .ck-content .image {
+.ck-content .image {
 
 }
 
     
- .theme-cleantype   .scroll-to-active-note-button {
+   .scroll-to-active-note-button {
         position: absolute;
         top: 10px;
         right: 20px;
         z-index: 100;
     }
     
-.theme-cleantype    .tree-settings-button {
+   .tree-settings-button {
         position: absolute;
         bottom: 10px;
         right: 20px;
         z-index: 100;
     }
 
-.theme-cleantype .btn-sm { 
+.btn-sm { 
         padding: .1rem .9rem;
 }
 
-.theme-cleantype .search-result-widget {
+.search-result-widget {
          margin-top: 10px;
 }
 
-.theme-cleantype .ck-content pre {
+.ck-content pre {
         min-width:100%
 }
 
 
 
-.theme-cleantype .promoted-attribute-cell {    opacity: 0.35;font-size:0.6rem;
+.promoted-attribute-cell {    opacity: 0.35;font-size:0.6rem;
         display: flex;
         align-items: center;
         margin: 00px;
 }
-.theme-cleantype  .note-book-card {
+ .note-book-card {
         padding:0px 15px 8px 10px;
 }
 
-.theme-cleantype  .note-list-widget .note-list {
+ .note-list-widget .note-list {
         padding: 10px;
       
 }
 
 
-.theme-cleantype .note-list-container img {
+.note-list-container img {
     width: 100%;
 }
 
- .theme-cleantype.h6, .theme-cleantype h6  {  font-size: 1.00rem!important;}
- .theme-cleantype.h5, .theme-cleantype h5  {  font-size: 1.00rem!important;}
- .theme-cleantype.h4, .theme-cleantype h4  {  font-size: 1.10rem!important;}
- .theme-cleantype.h3, .theme-cleantype h3  {  font-size: 1.20rem!important;}
- .theme-cleantype.h2, .theme-cleantype h2  {  font-size: 1.25rem!important;}
- .theme-cleantype.h1, .theme-cleantype h1  {  font-size: 1.50rem!important;}
+ .h6, h6  {  font-size: 1.00rem!important;}
+ .h5, h5  {  font-size: 1.00rem!important;}
+ .h4, h4  {  font-size: 1.10rem!important;}
+ .h3, h3  {  font-size: 1.20rem!important;}
+ .h2, h2  {  font-size: 1.25rem!important;}
+ .h1, h1  {  font-size: 1.50rem!important;}
 
  .collection-view-card-attribute b,  .collection-view-card-attribute strong {
     font-weight: normal!important;
     font-size: 100%;
 }
 
-.theme-cleantype .form-control {
+.form-control {
     border: 1px dashed #00000070!important;
         font-size:0.6rem;
         border:0px;
@@ -299,14 +594,14 @@ top:1px;
 
 
 
-.theme-cleantype .ck-content .table table, .theme-cleantype .ck-content .table table td {
+.ck-content .table table, .ck-content .table table td {
         border:solid 0px!important;
 }
 
-.theme-cleantype .note-detail-image-wrapper {
+.note-detail-image-wrapper {
        margin-top: 20px;
 }
-.theme-cleantype  .btn.btn-primary {
+ .btn.btn-primary {
         border-color: #dbdbdb;
         background-color: #d2d2d200;
         color: #868686;
@@ -314,7 +609,7 @@ top:1px;
 
 
 
-.theme-cleantype a {
+a {
     color: #007bff;
    
     text-decoration: none;
@@ -325,56 +620,142 @@ top:1px;
     text-overflow: ellipsis;
 }
 
-.theme-cleantype #right-pane {
+#right-pane {
          background-color: transparent;
     }
 
-.theme-cleantype #right-pane .card-body {
+#right-pane .card-body {
          max-height:100%
     }
-.theme-cleantype #right-pane  ul li::marker {
+#right-pane  ul li::marker {
  content: " ";;
 }
 
-.theme-cleantype #right-pane .todo-list__label__description {margin-left:8px;margin-top:-2px;}
+#right-pane .todo-list__label__description {margin-left:8px;margin-top:-2px;}
 
-.theme-cleantype #right-pane .image img {width:100%!important;padding:40px}
+#right-pane .image img {width:100%!important;padding:40px}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 /*
- .theme-cleantype #right-pane {
+ #right-pane {
       background-image: url("https://cdn.shopify.com/s/files/1/0806/5321/products/MORNING-MIST-GRID-ALLPAPER.jpg");;
       background-size: 400px 400px;
 }
 */
 
 
-.theme-cleantype #right-pane .card-header {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#right-pane .card-header {
         opacity: 0.5;
 }
-.theme-cleantype .scratchpad-widget {
+.scratchpad-widget {
     opacity: 1;
 }
 
 
-.theme-cleantype .note-book-card h5 {}
+.note-book-card h5 {}
 
-.theme-cleantype .grid-view h5 {
+.grid-view h5 {
     color: #000000;
     font-size: 0.9em!important;
     font-weight: normal!important;
     white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-        height: 20px;
+        height: 30px;
   max-width: 190px;float:left;margin-left:-6px;
     margin-top:-0px;
         padding-bottom: 12px;
     FONT-WEIGHT: 600!IMPORTANT;
 }
 
-.theme-cleantype #right-pane .widget-title {
+#right-pane .widget-title {
     border-radius: 0;
     padding: 0;
     border: 0;
@@ -385,12 +766,12 @@ top:1px;
     font-size: 85%;
 }
 
-.theme-cleantype #right-pane .widget-toggle-button {
+#right-pane .widget-toggle-button {
     cursor: pointer;
     color: #bababa !important;
 }
 
-.theme-cleantype #right-pane .widget-header-action {
+#right-pane .widget-header-action {
     cursor: pointer;
     color: #939393 !important;
     text-decoration: none;
@@ -399,11 +780,11 @@ top:1px;
     top: 2px;
 }
 
-.theme-cleantype .note-title-container input.note-title {
+.note-title-container input.note-title {
    color:#000000!important;
 }
 
-.theme-cleantype button.icon-button {
+button.icon-button {
     font-size: 1.0em!important;
     padding: 0px;
     max-height: 16px!important;
@@ -411,40 +792,40 @@ top:1px;
    
 }
 
-.theme-cleantype .floating-button {
+.floating-button {
     position: inherit!important;
     /* float: right; */
     left: calc(100% - 86px )!important;
     margin-top: -20px;
     z-index: 999;
 }
-.theme-cleantype .note-tab-row {
+.note-tab-row {
     background-color: transparent;
 }
 
-.theme-cleantype .note-tab {
+.note-tab {
     background-color: transparent;
 }
 
-.theme-cleantype  .note-tab-row .note-tab[active] .note-tab-wrapper {
+ .note-tab-row .note-tab[active] .note-tab-wrapper {
     background-color: transparent;
 }
 
-.theme-cleantype .note-tab-row .note-tab .note-tab-wrapper {
+.note-tab-row .note-tab .note-tab-wrapper {
       background-color: transparent;
 }
 
 
 
 
-.theme-cleantype .tab-row-filler .tab-row-border {
+.tab-row-filler .tab-row-border {
     background: linear-gradient(to right, var(--main-border-color), transparent);
     height: 1px;
     margin-top: 32px;
 }
 
 
-.theme-cleantype .ck .ck-placeholder, .theme-cleantype .ck .ck-placeholder {
+.ck .ck-placeholder, .ck .ck-placeholder {
     position: relative;
    color:black;
     opacity:0.2!important;
@@ -452,7 +833,7 @@ top:1px;
 
 
 
-.theme-cleantype .note-title-container input.note-title {
+.note-title-container input.note-title {
     
     font-size: 140%;
     font-weight: 600;
@@ -461,18 +842,18 @@ top:1px;
     
    }
 
-.theme-cleantype .type-search .note-title-container input.note-title {
+.type-search .note-title-container input.note-title {
     font-size: 150%;font-weight:600;
    }
 
-.theme-cleantype .note-book-title {
+.note-book-title {
     margin-bottom: 0;  word-break: normal;
    
 }
 
 
 
-.theme-cleantype .note-list.grid-view .note-book-card {
+.note-list.grid-view .note-book-card {
     flex-basis: 200px;
     max-height: 280px;
     max-width:205px;
@@ -486,7 +867,7 @@ top:1px;
 box-shadow: 0px 0px 11px 2px rgba(0,0,0,0.05);
 }
 
-.theme-cleantype .note-list.grid-view .note-book-card:hover {
+.note-list.grid-view .note-book-card:hover {
      flex-basis: 200px;
     max-height: 280px;
     max-width: 205px;
@@ -502,30 +883,30 @@ box-shadow: 0px 0px 11px 2px rgba(0,0,0,0.15);
 
 
 
-.theme-cleantype .ck-content .image.image_resized img {
+.ck-content .image.image_resized img {
     max-width: 100%!important;
 }
 
 
-.theme-cleantype .note-list.grid-view .note-book-card img {
+.note-list.grid-view .note-book-card img {
     max-height: 190px;
      width: auto!important;
    
     
 }
 
-.theme-cleantype .note-list-container img {
+.note-list-container img {
     max-width: 160px!important;
 }
 
 
-.theme-cleantype .note-list.grid-view .note-book-card .ck-content .image{margin-bottom:5px!important;}
+.note-list.grid-view .note-book-card .ck-content .image{margin-bottom:5px!important;}
 
 
 
 
 
-.theme-cleantype .note-book-content.type-image, .note-book-content.type-file, .note-book-content.type-protected-session {
+.note-book-content.type-image, .note-book-content.type-file, .note-book-content.type-protected-session {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -539,11 +920,11 @@ box-shadow: 0px 0px 11px 2px rgba(0,0,0,0.15);
     font-weight: 500;
     line-height: 1.52;
 }
-.theme-cleantype  .rendered-note-content {margin-top:-10px;
+ .rendered-note-content {margin-top:-10px;
        padding:10px 12px 10px 10px;
 }
 
-.theme-cleantype .note-book-title .rendered-note-attributes {
+.note-book-title .rendered-note-attributes {
        display:none;
     position: absolute;
     font-size: xx-small;
@@ -551,27 +932,27 @@ box-shadow: 0px 0px 11px 2px rgba(0,0,0,0.15);
     top: 15px;
     left: 10px;
 }
-.theme-cleantype .note-book-card:hover .rendered-note-attributes {
+.note-book-card:hover .rendered-note-attributes {
         font-size: xx-small;
     color: #4189f3;
     display:block!important;z-index:999;
 }
 
-.theme-cleantype .ui-fancytree {
+ .ui-fancytree {
   background-color: transparent!important;
   border: 0 !important;
   border-radius: 4px !important;
 
 }
 
-.theme-cleantype ul.fancytree-container {
+ul.fancytree-container {
  color: #333333;
   margin-left: 0px;
   margin-right: 0px;
     
 }
 
-.theme-cleantype .tree-wrapper {
+.tree-wrapper {
   background-color:transparent!important;
   margin-left: 0px;
   margin-right: 0px;
@@ -579,7 +960,7 @@ box-shadow: 0px 0px 11px 2px rgba(0,0,0,0.15);
 
 
 
-/*.theme-cleantype  .section-title-container {
+/* .section-title-container {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -591,7 +972,7 @@ box-shadow: 0px 0px 11px 2px rgba(0,0,0,0.15);
 */
 
 
-.theme-cleantype  .section-title-container {
+ .section-title-container {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -600,9 +981,10 @@ box-shadow: 0px 0px 11px 2px rgba(0,0,0,0.15);
 }
 
 
-.theme-cleantype .section-container {
+.section-container {
     margin-bottom: 0px;
     font-size: 10px;
     font-style: italic !important;
     text-transform: lowercase;
 }
+
