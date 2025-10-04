@@ -1,14 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
 
 body {
-    --tree-font-family: 'Roboto Mono', monospace;
-    --main-background-color: #f0f0f0;
-    --detail-font-family: 'Roboto Mono', monospace;
-    --more-accented-background-color: #ffffff50;
-
     --main-font-family: 'Roboto Mono', monospace;
+    --tree-font-family: var(--main-font-family);
+    --detail-font-family: var(--main-font-family);
+    --main-background-color: #f0f0f0;
+    --more-accented-background-color: #ffffff50;
+    --bit-more-accented-background-color: #f7f7ff50;
+
     --header-background-color: #f0f0f0;
     --button-background-color: #f0f0f0;
     --button-disabled-background-color: #404552;
@@ -19,16 +20,23 @@ body {
     --menu-background-color: #eee;
 
     --link-color: #2f80d0;
-    --link-style: italic;
+    --link-style: normal;
     --main-border-color: #e2e2e2;
-    --main-font-family: 'Roboto Mono', monospace;
 
     --main-font-size: 0.8rem !important;
     --gutter-color: #fefefe;
 
     --active-tab-background-color: #9fffd3;
     --active-tab-hover-background-color: #9fffd3;
+
+    --inactive-tab-background-color: var(--more-accented-background-color);
+
+    font-weight: 400;
 }
+
+.note-detail {
+    background-color: var(--bit-more-accented-background-color);
+} 
 
 .tab-row-widget {
     border-bottom: 1px solid #fefefe;
@@ -398,7 +406,7 @@ h1 {
 a {
     color: #007bff;
     text-decoration: none;
-    font-style: italic;
+    font-style: var(--link-style)
     background-color: transparent;
     overflow: hidden !important;
     white-space: nowrap;
@@ -446,16 +454,25 @@ a {
 }
 
 
-.note-book-card h5 {}
-
-.note-list-wrapper .note-book-card .note-book-header span.note-book-title {
+.note-list.grid-view .note-list-wrapper .note-book-card h5.note-book-header {
+    padding: 0em 1rem 0.5em 1rem;
+}
+    
+.note-list.grid-view .note-list-wrapper .note-book-card .note-book-header span.note-book-title {
     font-size: 1.2em;
+    vertical-align: initial;
+}
+
+.note-list.list-view .note-list-wrapper .note-book-card .note-book-header span.note-book-title {
+    font-size: 0.9em;
+    vertical-align: initial;
 }
 
 .note-list-wrapper .note-book-card .note-book-content .ck-content {
     padding: 0 !important;
     font-size: 0.8rem;
 }
+
 
 .grid-view h5 {
     color: #000000;
@@ -672,7 +689,7 @@ h6 {
     left: 10px;
 }
 
-.note-book-card:hover .rendered-note-attributes {
+.note-book-card.expanded .rendered-note-attributes {
     font-size: xx-small;
     color: #4189f3;
     display: block !important;
