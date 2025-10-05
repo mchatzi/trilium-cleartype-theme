@@ -34,6 +34,13 @@ body {
     font-weight: 400;
 }
 
+
+#left-pane span.fancytree-node.fancytree-active span.fancytree-title {
+    cursor: initial;
+}
+#left-pane span.fancytree-node span.fancytree-title {
+    cursor: pointer;
+}
 .note-detail {
     background-color: var(--bit-more-accented-background-color);
 } 
