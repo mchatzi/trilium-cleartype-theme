@@ -665,12 +665,11 @@ button.icon-button {
     padding-top: 0px;
 }
 
-.h1,
-.h2,
-.h3,
-.h4,
-.h5,
-.h6,
+.note-detail .ck-content h2, 
+.note-detail .ck-content h3, 
+.note-detail .ck-content h4, 
+.note-detail .ck-content h5, 
+.note-detail .ck-content h6,
 h1,
 h2,
 h3,
@@ -678,8 +677,8 @@ h4,
 h5,
 h6 {
     margin-bottom: .8rem;
-    font-weight: 500;
-    line-height: 1.52;
+    font-weight: 400;
+    line-height: 1.92;
 }
 
 .rendered-note-content {
